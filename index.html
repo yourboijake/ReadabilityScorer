@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Readability</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="process.js"></script>
+    </head>
+    <body>
+    <div class="main-container">
+        <h1>Welcome to the Readability Scorer!</h1>
+        <h3>Enter text below to find the Flesch-Kincaid readability score</h3>
+        <div id="text-container">
+            <button id="analyze">Analyze Text</button>
+            <form id="form1">
+                <textarea id="user-text" cols="80" rows="20" maxlength="2000" placeholder="Enter text here (2000 character max)"></textarea>
+            </form>
+            <p id="display-score"></p>
+        </div>
+        <div id="details">
+            <p>Details on the <a id="details-link" href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests">Flesch-Kincaid readability score</a></p>
+        </div>
+    </div>
+    </body>
+</html>
