@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Montserrat:wght@300;400;500&family=Roboto&display=swap');
+body {
+    font-family: 'Montserrat', serif;
+    background-image: linear-gradient(to bottom right, #E9EEED, #F8F8F8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #393939;
+    height: 100%;
+}
+
+#main-container {
+    min-height: 100%;
+    position: relative;
+}
+
+h1 {
+    font-size: max(3.7vw, 6vh);
+    margin-left: 3vw;
+    animation-name: h1anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes h1anim {
+    100% {opacity: 1;}
+}
+
+h3 {
+    margin-top: 3vh;
+    font-size: max(2.2vw, 2vh);
+    animation-name: h3anim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-left: 0px;
+}
+
+@keyframes h3anim {
+    40% {
+        opacity: 0;
+        margin-left: 0px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 3vw;
+    }
+}
+
+#text-container {
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 10px;
+    animation-name: textanim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-left: 0px;
+}
+
+@keyframes textanim {
+    40% {
+        opacity: 0;
+        margin-left: 0px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 3vw;
+    }
+}
+
+#analyze {
+    font-size: max(2.2vw, 2.2vh);
+    font-family: 'Montserrat';
+}
+
+#form1 {
+    font-size: max(1.2vw, 1.2vh);
+}
+
+#display-score {
+    font-size: max(2vw, 2vh);
+}
+
+#details {
+    background: #6A6A6A;
+    width: 100%;
+    height: 8vh;
+    color: white;
+    font-size: max(1.5vw, 1.5vh);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+#details-link {
+    color: white;
+    font-size: max(1.5vw, 1.5vh);
+}
